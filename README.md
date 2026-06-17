@@ -19,10 +19,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
-콘텐츠 수정: `src/lib/content.ts`
-
 ## Stack
 
 Next.js · TypeScript · Tailwind CSS
