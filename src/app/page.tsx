@@ -1,8 +1,8 @@
 import { PROFILE, PROJECTS } from "@/lib/content";
 import { Badge } from "@/components/badge";
 import { FeaturedProject, ProjectGridCard } from "@/components/project-card";
-import { Mail, FileText, ArrowDown } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/icons";
+import { ArrowDown } from "lucide-react";
+import { GithubIcon } from "@/components/icons";
 
 export default function Home() {
   const featured = PROJECTS.filter((p) => p.featured);
@@ -12,10 +12,14 @@ export default function Home() {
     <main className="mx-auto w-full max-w-4xl flex-1 px-6">
       {/* Nav */}
       <header className="flex items-center justify-between py-6">
-        <span className="font-mono text-sm font-semibold">
-          {PROFILE.name.toLowerCase().replace(/\s+/g, "")}
-          <span className="text-primary">.dev</span>
-        </span>
+        <a
+          href={PROFILE.github}
+          target="_blank"
+          rel="noreferrer"
+          className="font-mono text-sm font-semibold hover:text-primary"
+        >
+          github.com/F0F8FF
+        </a>
         <nav className="hidden items-center gap-6 text-sm text-muted sm:flex">
           <a href="#projects" className="hover:text-foreground">
             프로젝트
@@ -23,8 +27,13 @@ export default function Home() {
           <a href="#stack" className="hover:text-foreground">
             스택
           </a>
-          <a href="#contact" className="hover:text-foreground">
-            연락처
+          <a
+            href={PROFILE.github}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-foreground"
+          >
+            GitHub
           </a>
         </nav>
       </header>
@@ -42,24 +51,12 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <a
-            href={PROFILE.links.github}
+            href={PROFILE.github}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-[var(--radius)] bg-primary px-4 py-2 text-sm font-semibold text-[hsl(222_47%_6%)] hover:bg-primary/90"
           >
             <GithubIcon className="h-4 w-4" /> GitHub
-          </a>
-          <a
-            href={`mailto:${PROFILE.email}`}
-            className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-border px-4 py-2 text-sm hover:bg-surface-2"
-          >
-            <Mail className="h-4 w-4" /> 이메일
-          </a>
-          <a
-            href={PROFILE.links.resume}
-            className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-border px-4 py-2 text-sm hover:bg-surface-2"
-          >
-            <FileText className="h-4 w-4" /> 이력서
           </a>
         </div>
         <a
@@ -111,47 +108,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* GitHub */}
       <section
         id="contact"
         className="my-10 rounded-[var(--radius)] border border-border bg-surface/50 p-8 text-center"
       >
-        <h2 className="mb-2 text-xl font-semibold">함께 일해요</h2>
+        <h2 className="mb-2 text-xl font-semibold">코드 & 데모</h2>
         <p className="mx-auto mb-6 max-w-md text-sm text-muted">
-          AI 엔지니어 포지션을 찾고 있습니다. 프로덕션 LLM/RAG 시스템 구축에
-          대해 이야기 나눠요.
+          프로젝트 소스와 README는 GitHub에서 확인할 수 있습니다.
         </p>
-        <div className="flex justify-center gap-4">
-          <a
-            href={`mailto:${PROFILE.email}`}
-            className="text-muted hover:text-primary"
-            aria-label="email"
-          >
-            <Mail className="h-5 w-5" />
-          </a>
-          <a
-            href={PROFILE.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted hover:text-primary"
-            aria-label="github"
-          >
-            <GithubIcon className="h-5 w-5" />
-          </a>
-          <a
-            href={PROFILE.links.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="text-muted hover:text-primary"
-            aria-label="linkedin"
-          >
-            <LinkedinIcon className="h-5 w-5" />
-          </a>
-        </div>
+        <a
+          href={PROFILE.github}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-border px-4 py-2 text-sm hover:bg-surface-2"
+        >
+          <GithubIcon className="h-4 w-4" />
+          github.com/F0F8FF
+        </a>
       </section>
 
       <footer className="py-8 text-center text-xs text-muted">
-        © {new Date().getFullYear()} {PROFILE.name}. Built with Next.js.
+        © {new Date().getFullYear()}. Built with Next.js.
       </footer>
     </main>
   );

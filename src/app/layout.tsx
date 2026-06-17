@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 import { PROFILE } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: `${PROFILE.name} — AI Engineer`,
+  title: "AI Engineer Portfolio",
   description: PROFILE.tagline,
 };
 

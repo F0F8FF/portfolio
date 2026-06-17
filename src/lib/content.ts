@@ -1,21 +1,14 @@
 /**
  * 포트폴리오 콘텐츠. 여기만 수정하면 사이트 전체가 바뀝니다.
- * TODO 표시된 곳(이름·링크·수치)을 본인 정보로 채우세요.
  */
 
 export const PROFILE = {
-  name: "Your Name", // TODO: 이름
   // 한 줄 포지셔닝 — "AI 공부 중인 개발자"가 아니라 가진 무기를 내세웁니다.
   tagline: "프로덕션 AI 제품을 설계·배포·운영하는 엔지니어",
   subtitle:
     "4년차 풀스택 경험을 바탕으로 LLM·RAG 시스템을 실제 서비스로 출시합니다.",
   location: "Seoul, Korea",
-  email: "you@example.com", // TODO
-  links: {
-    github: "https://github.com/F0F8FF",
-    linkedin: "https://linkedin.com/in/your-handle", // TODO
-    resume: "/resume.pdf", // TODO: public/resume.pdf 배치
-  },
+  github: "https://github.com/F0F8FF",
   stack: [
     "TypeScript",
     "Next.js",
