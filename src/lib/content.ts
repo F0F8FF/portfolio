@@ -12,7 +12,7 @@ export const PROFILE = {
   location: "Seoul, Korea",
   email: "you@example.com", // TODO
   links: {
-    github: "https://github.com/your-handle", // TODO
+    github: "https://github.com/F0F8FF",
     linkedin: "https://linkedin.com/in/your-handle", // TODO
     resume: "/resume.pdf", // TODO: public/resume.pdf 배치
   },
@@ -100,7 +100,7 @@ export const PROJECTS: Project[] = [
       { label: "하이브리드 Recall@5", value: "TODO %" },
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/askdocs" }, // TODO
+      { label: "GitHub", href: "https://github.com/F0F8FF/rag-saas" },
       { label: "Live Demo", href: "#" }, // TODO: Vercel URL
     ],
     featured: true,
@@ -156,7 +156,7 @@ export const PROJECTS: Project[] = [
       { label: "작업당 비용", value: "$TODO" },
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/agent-system" }, // TODO
+      { label: "GitHub", href: "https://github.com/F0F8FF/agent-system" },
       { label: "Live Demo", href: "#" }, // TODO: Vercel URL
     ],
     featured: true,
@@ -210,7 +210,7 @@ export const PROJECTS: Project[] = [
       { label: "평가 기준 수", value: "5" },
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/your-handle/llm-judge" }, // TODO
+      { label: "GitHub", href: "https://github.com/F0F8FF/llm-judge" },
       { label: "Live Demo", href: "#" }, // TODO: Vercel URL
     ],
     featured: true,
