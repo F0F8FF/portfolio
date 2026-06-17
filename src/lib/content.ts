@@ -101,7 +101,7 @@ export const PROJECTS: Project[] = [
     ],
     links: [
       { label: "GitHub", href: "https://github.com/F0F8FF/rag-saas" },
-      { label: "Live Demo", href: "#" }, // TODO: Vercel URL
+      { label: "Live Demo", href: "https://rag-saas.vercel.app" },
     ],
     featured: true,
   },
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
     ],
     links: [
       { label: "GitHub", href: "https://github.com/F0F8FF/agent-system" },
-      { label: "Live Demo", href: "#" }, // TODO: Vercel URL
+      { label: "Live Demo", href: "https://agent-system-cyan.vercel.app" },
     ],
     featured: true,
   },
@@ -211,7 +211,7 @@ export const PROJECTS: Project[] = [
     ],
     links: [
       { label: "GitHub", href: "https://github.com/F0F8FF/llm-judge" },
-      { label: "Live Demo", href: "#" }, // TODO: Vercel URL
+      { label: "Live Demo", href: "https://llm-judge-sigma.vercel.app" },
     ],
     featured: true,
   },
